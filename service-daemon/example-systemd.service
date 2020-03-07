@@ -1,0 +1,13 @@
+[Unit]
+Description=My service
+
+Requires=networking.service
+After=networking.service
+
+[Service]
+ExecStart=/usr/local/bin/myservice
+EnvironmentFile=-/etc/default/myservice
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

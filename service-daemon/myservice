@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+import src
+import sys
+
+if __name__ == '__main__':
+    sys.exit(src.main())
